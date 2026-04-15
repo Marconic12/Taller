@@ -33,4 +33,14 @@ public class Pago
     {
         return this.fechaPago;
     }
+
+    @Override
+    public String toString() {
+        return "Pago{" +
+                "fechaPago=" + fechaPago +
+                ", metodoPago='" + metodoPago + '\'' +
+                ", monto=" + monto +
+                ", usuario=" + usuario +
+                '}';
+    }
 }
