@@ -47,6 +47,7 @@ public class Main {
                     String email = sc.nextLine();
                     usuario = new Usuario(0,nombre, email);
                     System.out.println("Usuario creado: " + usuario.getNombre());
+                    usuario.crearMembresia();
                     gimnasio.registrarUsuario(usuario);
                     break;
 

@@ -21,8 +21,10 @@ public class Gimnasio {
 
     }
 
-    public void registrarUsuario(Usuario usuario) {
+    public void registrarUsuario(Usuario usuario)
+    {
         listaUsuarios.add(usuario);
+
     }
 
     public void listarUsuarios() {
@@ -36,6 +38,8 @@ public class Gimnasio {
         for (var i : this.listaUsuarios) {
             if (i.getMembresia().getTipoMembresia() != null && i.getMembresia().getTipoMembresia().equals("Membresia Gratis")) {
                 System.out.println("Usuarios con membresia gratuita: " + i.getNombre());
+
+
             }
         }
     }
@@ -44,6 +48,7 @@ public class Gimnasio {
         for (var i : this.listaUsuarios) {
             if (i.getMembresia().getTipoMembresia() != null && i.getMembresia().getTipoMembresia().equals("Membresia Premium")) {
                 System.out.println("Usuarios con membresia premium: " + i.getNombre());
+
             }
         }
     }

@@ -45,7 +45,7 @@ public abstract class Membresia
 
         public MembresiaGratis()
         {
-
+            this.tipoMembresia = "Membresia Gratis";
         }
 
         @Override
@@ -159,7 +159,7 @@ public abstract class Membresia
             if(!this.accesoAreasExclusivas)
             {
                 this.accesoAreasExclusivas = true;
-                System.out.println("su acceso ya ha sido habilitad");
+                System.out.println("su acceso ya ha sido habilitado");
             }
             else
             {

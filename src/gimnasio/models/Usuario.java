@@ -1,6 +1,9 @@
 package gimnasio.models;
 
 import gimnasio.servicios.Membresia;
+
+import java.time.LocalDate;
+
 /// clase que gestiona cada usuario
 
 public class Usuario
@@ -28,6 +31,11 @@ public class Usuario
 
     }
 
+    public void crearMembresia()
+    {
+        this.membresia = new Membresia.MembresiaGratis(true, LocalDate.now().plusMonths(1), LocalDate.now());
+
+    }
 
     public String getNombre() {
         return nombre;
